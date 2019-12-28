@@ -1,0 +1,40 @@
+    	 body{
+    	 	background-color:#d5e3e8;
+    	 }
+         h1{
+         	text-align: center;
+            color:#ffb900;
+            font-family: 'Georgia';
+            font-size:3em;
+            font-style:italic;
+            font-weight: bolder;
+            text-shadow: 2px 3px darkblue;
+         }
+         h2{
+         	text-align: right;
+         	color:black;
+         	font-weight: normal;
+         	font-size: 2.5em;
+         	letter-spacing: 2px;
+         	font-family: 'times new roman';
+         }
+         p{
+         	margin-left:20px;
+         	margin-right: 20px;
+         	color: #14a7e0;
+         	font-family: 'times new roman';
+         	text-indent: 15px;
+         	font-weight: bold;
+         	font-size : 1.5em;
+         }
+         .quote{
+         	text-transform: capitalize;
+         	color: #1c6a8a;
+         }
+         .statement{
+         	line-height: 20pt;
+         	letter-spacing: 3px;
+         	word-spacing: 10px;
+
+         }
+
