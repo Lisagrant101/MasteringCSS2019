@@ -1,0 +1,33 @@
+h1{
+   font-size:2.5em;
+   font-family: 'Georgia';
+}
+th, td{
+	font-family:monospace;
+	column-gap:5px;
+	text-align : center;
+}
+
+table > tbody> tr.dark {
+	background-color: #d6d3cb; /*mediumgrey*/ 
+}
+    
+
+.status1{
+ text-transform: uppercase;
+ color: green;
+}
+.boarding{
+	text-transform: uppercase;
+	color:black;
+
+}
+.delay{
+	text-transform: capitalize;
+	color:red;
+}
+#headings{
+	background-color: lightblue;
+	color:darkblue
+	text-transform: uppercase;
+}
