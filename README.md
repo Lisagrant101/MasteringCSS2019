@@ -63,3 +63,24 @@ font-style : italic, normal
 
 font-weight : number 100 to 900 or word like bold
 
+------------------------------------------------------------------lesson 3
+
+
+SELECTORS
+
+tags : h1 , h2, p, etc
+
+ID and Class selectors: use # and . respectively then the name of id/class.
+
+multiple selectors : on one line with comma between.
+
+descendant selector : [main element tag] followed by [descending tag] no comma
+ie. p h2{} selects all h2 headings inside paragraphs
+
+Descendant selector : [parent tag] > [child tag] ie. #main > h2
+
+Attribute selector : [attribute =value]{}
+use square brackets here in definition
+
+Psuedo selector : p::first-line or p:first-letter selects only a portion of hte paragraph listed.
+
