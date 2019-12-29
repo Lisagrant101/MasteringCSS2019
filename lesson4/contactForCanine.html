@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+	<link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet"> 
+	<link  rel="stylesheet"  href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"/>
+	<title>Canine school contact form</title>
+
+	<style>
+		h1{
+			font-size:2.5em;
+			font-family:'arial';
+			text-shadow: 2px 2px blue;
+			color:orange;
+		}
+		form{
+			font-size:14pt;
+			width:100%;
+			border: solid black 2px;
+			padding: 5px;
+			background-color: #dedad1; /*light grey*/
+		}
+		input{
+			width:90%;
+			line-height: 20pt; 
+			margin:20px; 
+			font-size: 18pt; 
+			background color: ##b3aea2; /*medium to dark grey*/ 
+			border:none;
+		}
+
+		select{
+			width:90%;
+			font-size: 2em;
+			margin: 50px;
+			background-color: ##b3aea2; /*medium to dark grey*/ 
+		}
+
+		input[type=checkbox]{
+			width:25%;
+			line-height:16pt;
+			zoom:2;
+			margin-left:50px;
+		}
+
+		button{
+			color:black;
+			border:none;
+			border-radius: 20px;
+			background-color: orange;
+			font-size:2.5em;
+			line-height: 30pt;
+		}
+
+			</style>
+	
+</HEAD>
+	<body>
+	<div id ="container">
+	<h1>Canine School</h1>
+    <!--Start form here--->
+    <form action="#" method="post">
+    	
+    	<input type="text" name="fname" id="fname"/ placeholder="owners' name"> <br/>
+
+    	
+    	<input type="email" id="email" name ="email" placeholder="Email address"/>
+        
+        
+        <input type="tel" id="phone" name ="phone" placeholder="Telephone number"/>
+
+        
+        <input type="text" id="msg" name="msg" placeholder="Puppy's name"/>
+
+        <input type="date" id="dob" name="dob" placeholder="Puppy date of birth"/>
+
+        <input type="text" id="breed" name="breed" placeholder="Puppy breed"/>
+
+        <br/>
+        <label for ="heard">How you heard of us?</p>
+        <select name ="heard">
+        	<option value="radio">Radio</option>
+        	<option value="driving by"> Driving by</option>
+        	<option value="friends">Friends/neighbours</option>
+        </select>
+
+        <label for="vaccines">Vaccinations</label><br/>
+ 		<input type="checkbox" name="parvo" value="parvo"/> Parvo<br/>
+		<input type="checkbox" name="distemper" value="distemper"/> Distemper<br/>
+ 		<input type="checkbox" name="rabies" value="rabies"/> rabies<br/>
+
+
+        <button class="submit" type="submit">Submit</button>
+        <button class="submit" type="reset">Reset</button>
+
+      </form>
+	</div>
+	</body>
+</html>
