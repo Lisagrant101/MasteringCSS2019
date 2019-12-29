@@ -84,3 +84,20 @@ use square brackets here in definition
 
 Psuedo selector : p::first-line or p:first-letter selects only a portion of hte paragraph listed.
 
+-------------------------------------------------------------------lesson 4
+FORMS styling
+
+form itself : width, border, padding, background color
+
+input : width, height, margin, font-size, background color, borders (none or on bottom)
+
+dropdone (select) : width, font-size, background color, 
+
+*** width 100%, large font and line height, and border none are mobile friendly 
+
+input[type=checkbox] :width, height and zoom
+
+form p : font family, font - size
+
+button: big height, big font, urgency color, rounded corners.
+
