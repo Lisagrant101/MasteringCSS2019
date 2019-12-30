@@ -84,3 +84,31 @@ use square brackets here in definition
 
 Psuedo selector : p::first-line or p:first-letter selects only a portion of hte paragraph listed.
 
+-------------------------------------------------------------------lesson 4
+FORMS styling
+
+form itself : width, border, padding, background color
+
+input : width, height, margin, font-size, background color, borders (none or on bottom)
+
+dropdone (select) : width, font-size, background color, 
+
+*** width 100%, large font and line height, and border none are mobile friendly 
+
+input[type=checkbox] :width, height and zoom
+
+form p : font family, font - size
+
+button: big height, big font, urgency color, rounded corners.
+
+--------------------------------------------------------------------lesson 6
+CSS POSITIONING
+
+STATIC - elements line up one on top of each other, this is the default for div 'boxes'
+
+RELATIVE - you write ie. top:300px left:100px places box at (100, 300) point relative to its default position.
+
+ABSOLUTE - write ie. bottom:0px right 0px; puts it exactly at the bottom right corner of screen. it stays where you put it even when you 
+scroll the screen.
+
+FIXED - LIKE ABSOLUTE BUT MOVES WITH YOU WHEN SCROLLING
