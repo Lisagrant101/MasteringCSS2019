@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions and Animations</title>
+    <link rel="reset.css" type="stylesheet"/>
+    <style>
+    	header{
+    		height:400px;
+    	}
+    	h1{
+    		font-size:2.5em;
+    	}
+    	h2{
+    		font-size: 1.5em;
+    		font-weight: bolder;
+    		box-shadow:10px;
+    	}
+    	#skewText:hover{
+    		transform: skew(10deg, 10deg);
+    	}
+    	#noHoverSkewText{
+    		transform:skew(10deg, 10deg);
+    	}
+    	#rotateImg:hover{
+    		transform: rotate(5deg);
+    	}
+    	#skewImg{
+    		transform: skew(10deg, 10deg);
+    	}
+    	#translateImg:hover{
+    		transition: 8s;
+    		transform: translate(300px, 100px);
+
+    	}
+    	#noTimeTranslateImg:hover{
+    		transform: translate(300px,0px);
+    	}
+    </style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Questions on Skewness</h1><br/>
+		</header>
+			<p>
+			<h2 id="noHoverSkewText">This heading is Skewed without hover attribute</h2><br/>
+			<h2 id="skewText">This heading is Skewed when hovered over</h2><br/>
+			</p>
+		
+		<div id="part1">
+			<h2>Part 1</h2>
+			<p>Hover over the following image to see it rotate</p><br/>
+			<img id="rotateImg" src="glowWaterfall.jpg" alt="A glowing waterfall"/>
+		</div>
+		<div id="part2">
+			<h2>Part 2</h2>
+			<p>following image is skewed by 15 degrees.</p><br/>
+			<img id="skewImg" src="riverbed.jpg" alt="A riverbed with a waterfall"/>
+		</div>
+		<div id="part3">
+			<h2>Part 3</h2>
+			<p>following image will move acrose the screen</p><br/>
+			<img id="translateImg" src="longWaterfall.jpg" alt="a long waterfall image" height="150px" width="200px"/>	<br/>
+			<p>following image is tranlated without a delay time.</p>
+			<img id="noTimeTranslateImg" src="longWaterfall.jpg" alt="a long waterfall image" height="150px" width="200px"/>	<br/>
+		</div>
+	</div>
+</body>
+</html>

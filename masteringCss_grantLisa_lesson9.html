@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A beautiful sunrise</title>
+    <style>
+         #back{
+         	background-color: #a30844;
+			width:500px;
+			height:500px;
+			position:relative;
+			top:0px;   
+			z-index: -1; 
+			overflow: hidden; 
+			animation: changeSky 30s infinite;    
+         }
+         #sunrise{
+         	position:absolute;
+         	width: 50px;
+         	height:50px;
+         	top:80%;
+         	left:-25px;
+         	border-radius: 100px;
+         	background-color: red;
+         	z-index: 1;
+         	animation: moveSun 30s infinite;
+         	animation-timing-function: linear;
+         	overflow: hidden;
+
+         }
+         /*moves the sun left to right, and a little bit up during the left to right motion.*/
+         @keyframes moveSun{
+         
+         	33%{
+         		top:50%;
+         		left:33%;
+         		background-color:yellow;
+         	}
+         	66%{
+
+         		top: 50%;
+         		left: 66%;
+         		background-color: yellow;
+         	}
+         	
+         	100%{
+    
+         		top: 80%;
+         		left:100%;
+         	}
+         }
+         /*changes the sky color from dark at the suns lowest point to light at the suns highest poitn*/
+         @keyframes changeSky{
+         	33%, 66%{
+         		background-color:skyblue;
+         	}
+         	100%{
+         		background-color:#a30844
+         	}
+         }
+         /*vreates a curved earth on top of the blue background*/
+         #ground{
+         	position: relative;
+         	background-color: green;
+         	width:300%;
+         	height: 300%;
+         	top:80%;
+         	left:-100%;
+           	z-index: 2;
+           	border-radius:100%;
+           	
+         }
+    </style>
+</head>
+<body>
+	<div id="back">
+		<div id="sunrise">
+		</div>
+		<div id="ground">
+		</div>
+	</div>
+</body>
+</html>
