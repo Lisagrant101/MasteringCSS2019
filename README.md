@@ -112,3 +112,83 @@ ABSOLUTE - write ie. bottom:0px right 0px; puts it exactly at the bottom right c
 scroll the screen.
 
 FIXED - LIKE ABSOLUTE BUT MOVES WITH YOU WHEN SCROLLING
+
+RESPONSIVE DESIGN
+
+SMALL SCREENS  at a glance info
+
+LARGE SCREENS comprehensive information
+
+Coding: 
+<meta name="veiwport" content="width=device-width, initial-scale=1"/>
+
+<link href="reset.css" type="stylesheet"/>
+You can get reset.css from eric meyer website.
+
+Put a logical division around everything.
+(css, margin padding =0)
+
+Put a header section
+(css text align center, background to grey light, width 100%, padding and border)
+
+Put a section for all the content stories
+You can put each story in the section under divs with the same class names.
+(css margin and borders, border radius padding background color and box shadow, set width of individual story divs relative to whole story section)
+
+Put a footer at the bottom
+(css text align, center, border top, bottom position, width 100%, height, margin top)
+
+(images css: width 100%)
+
+(css: @media screen and (min-width:600px){
+	change header font size to less
+	change story width to half and float to left
+	change story img to 50% width, float right and padding
+}//this css for tablet
+other formats of screens:
+1024px = for desktop
+default css for mobile.
+Order the CSS styles : mobile> tablet> desktop.
+
+TRANSITIONS AND ANIMATIONS
+HTML->
+---use reset.css for defaults
+---container div for everything
+---container div for content you want transitions/animations
+css->
+---use opacity property for selectors you will style (
+---use transition property, and transform property on content selectors using the hover property.
+ie. #div4Content img:hover{
+transtion:opacity 1s; //
+transition-delay:.25s;
+transform:rotate(5deg);
+transform:scale(2, 2); //2 stands for 200%
+}
+
+SPRITE SHEETS
+div for background, div for moving object
+audio tag set to autoplay
+iframe tag to allow playing music
+
+Back CSS-----------
+	set background-image to your background
+	width to 100%
+	height:1022px
+	z-index to -1 (higher numbers are on top of lower numbers, zindex is position of images on screen)
+	animation: back 30s  infinite;
+	animation-time-function:linear (means the the acceleration or deceleration of moving images can be set to ease-in or ease-out also)
+@keyframes back CSS-----------
+	100% {
+	   set background-positon:-3027px 0; 
+(-3027px moves the image to the left  by 3027 px which should be the image width for a full screen image, 0 means no yaxis movement)
+sprite div CSS----------------
+	uses a multiple frame repeated animation
+	postion set for top and left
+	width and height set to div width and height
+	background-image set to url(image name)
+	animation: .6s steps(6) infinite; means that there are 6 images/frames in the whole image 
+	z-index:1;
+	background-position:-1536px 0;
+	(sets the image to move to the left the entire width of the sprite image but because the sprite div is 1/6 of the width of the background image then it bounces along the screen showing 1/6 of the image at the time)	
+sound set in html
+
